@@ -1,0 +1,478 @@
+<table style="font-size:90%; text-align: center" class="wikitable sortable jquery-tablesorter">
+<thead><tr>
+<th style="background:#ddddee;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Name
+</th>
+<th style="background:#ddddee;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Plane
+</th>
+<th style="background:#ddddee;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Card link
+</th>
+<th style="background:#ddddee;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Available
+</th></tr></thead><tbody>
+<tr>
+<td> <a title="Bant" href="/Bant">Bant</a> </td>
+<td> <a title="Alara" href="/Alara">Alara</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Bant'); return false;" href="http://www.magiccards.info/query?q=%21Bant" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Grixis" href="/Grixis">Grixis</a> </td>
+<td> <a title="Alara" href="/Alara">Alara</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Grixis'); return false;" href="http://www.magiccards.info/query?q=%21Grixis" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Naya" href="/Naya">Naya</a> </td>
+<td> <a title="Alara" href="/Alara">Alara</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Naya'); return false;" href="http://www.magiccards.info/query?q=%21Naya" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Maelstrom" href="/Maelstrom">The Maelstrom</a> </td>
+<td> <a title="Alara" href="/Alara">Alara</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Maelstrom'); return false;" href="http://www.magiccards.info/query?q=%21The+Maelstrom" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Lethe Lake" href="/Lethe_Lake">Lethe Lake</a> </td>
+<td> <a title="Arkhos" href="/Arkhos">Arkhos</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Lethe Lake'); return false;" href="http://www.magiccards.info/query?q=%21Lethe+Lake" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Pools of Becoming" href="/Pools_of_Becoming">Pools of Becoming</a> </td>
+<td> <a title="Nicol Bolas" href="/Nicol_Bolas">Bolas's</a> <a title="Meditation Plane" href="/Meditation_Plane">Meditation Realm</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Pools of Becoming'); return false;" href="http://www.magiccards.info/query?q=%21Pools+of+Becoming" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Tolaria West" href="/Tolaria_West">Academy at Tolaria West</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Academy at Tolaria West'); return false;" href="http://www.magiccards.info/query?q=%21Academy+at+Tolaria+West" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Vesuva" href="/Vesuva">Isle of Vesuva</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Isle of Vesuva'); return false;" href="http://www.magiccards.info/query?q=%21Isle+of+Vesuva" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Krosa" href="/Krosa">Krosa</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Krosa'); return false;" href="http://www.magiccards.info/query?q=%21Krosa" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Llanowar" href="/Llanowar">Llanowar</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Llanowar'); return false;" href="http://www.magiccards.info/query?q=%21Llanowar" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Otaria" href="/Otaria">Otaria</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Otaria'); return false;" href="http://www.magiccards.info/query?q=%21Otaria" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Shiv" href="/Shiv">Shiv</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Shiv'); return false;" href="http://www.magiccards.info/query?q=%21Shiv" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="The Eon Fog" href="/The_Eon_Fog">The Eon Fog</a> </td>
+<td> <a title="Equilor" href="/Equilor">Equilor</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Eon Fog'); return false;" href="http://www.magiccards.info/query?q=%21The+Eon+Fog" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Turri Island" href="/Turri_Island">Turri Island</a> </td>
+<td> <a title="Ir" href="/Ir">Ir</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Turri Island'); return false;" href="http://www.magiccards.info/query?q=%21Turri+Island" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="The Æther Flues" href="/The_%C3%86ther_Flues">The Æther Flues</a> </td>
+<td> <a title="Iquatana" href="/Iquatana">Iquatana</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Æther Flues'); return false;" href="http://www.magiccards.info/query?q=%21The+%C3%86ther+Flues" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Skybreen" href="/Skybreen">Skybreen</a> </td>
+<td> <a title="Kaldheim" href="/Kaldheim">Kaldheim</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Skybreen'); return false;" href="http://www.magiccards.info/query?q=%21Skybreen" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Minamo" href="/Minamo">Minamo</a> </td>
+<td> <a class="mw-redirect" title="Kamigawa (plane)" href="/Kamigawa_(plane)">Kamigawa</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Minamo'); return false;" href="http://www.magiccards.info/query?q=%21Minamo" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Sokenzan" href="/Sokenzan">Sokenzan</a> </td>
+<td> <a class="mw-redirect" title="Kamigawa (plane)" href="/Kamigawa_(plane)">Kamigawa</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Sokenzan'); return false;" href="http://www.magiccards.info/query?q=%21Sokenzan" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Mirrored Depths" href="/Mirrored_Depths">Mirrored Depths</a> </td>
+<td> <a title="Karsus" href="/Karsus">Karsus</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Mirrored Depths'); return false;" href="http://www.magiccards.info/query?q=%21Mirrored+Depths" class="autocardhref">Card</a> </td>
+<td> <i><a title="Worldwake" href="/Worldwake">Worldwake</a></i> Gateway Season
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Tember City" href="/Tember_City">Tember City</a> </td>
+<td> <a title="Kinshala" href="/Kinshala">Kinshala</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Tember City'); return false;" href="http://www.magiccards.info/query?q=%21Tember+City" class="autocardhref">Card</a> </td>
+<td> <i><a title="Archenemy" href="/Archenemy">Archenemy</a></i> Release Event
+</td></tr>
+<tr>
+<td> <a title="Goldmeadow" href="/Goldmeadow">Goldmeadow</a> </td>
+<td> <a class="mw-redirect" title="Lorwyn (plane)" href="/Lorwyn_(plane)">Lorwyn</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Goldmeadow'); return false;" href="http://www.magiccards.info/query?q=%21Goldmeadow" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Great Forest" href="/Great_Forest">The Great Forest</a> </td>
+<td> <a class="mw-redirect" title="Lorwyn (plane)" href="/Lorwyn_(plane)">Lorwyn</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Great Forest'); return false;" href="http://www.magiccards.info/query?q=%21The+Great+Forest" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Velis Vel" href="/Velis_Vel">Velis Vel</a> </td>
+<td> <a class="mw-redirect" title="Lorwyn (plane)" href="/Lorwyn_(plane)">Lorwyn</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Velis Vel'); return false;" href="http://www.magiccards.info/query?q=%21Velis+Vel" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Celestine Reef" href="/Celestine_Reef">Celestine Reef</a> </td>
+<td> <a title="Luvion" href="/Luvion">Luvion</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Celestine Reef'); return false;" href="http://www.magiccards.info/query?q=%21Celestine+Reef" class="autocardhref">Card</a> </td>
+<td> <i><a title="Zendikar" href="/Zendikar">Zendikar</a></i> Prerelease Event
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Cliffside Market" href="/Cliffside_Market">Cliffside Market</a> </td>
+<td> <a title="Mercadia" href="/Mercadia">Mercadia</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Cliffside Market'); return false;" href="http://www.magiccards.info/query?q=%21Cliffside+Market" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Glimmervoid" href="/Glimmervoid">Glimmervoid Basin</a> </td>
+<td> <a class="mw-redirect" title="Mirrodin (plane)" href="/Mirrodin_(plane)">Mirrodin</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Glimmervoid Basin'); return false;" href="http://www.magiccards.info/query?q=%21Glimmervoid+Basin" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Panopticon" href="/Panopticon">Panopticon</a> </td>
+<td> <a class="mw-redirect" title="Mirrodin (plane)" href="/Mirrodin_(plane)">Mirrodin</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Panopticon'); return false;" href="http://www.magiccards.info/query?q=%21Panopticon" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Fields of Summer" href="/Fields_of_Summer">Fields of Summer</a> </td>
+<td> <a title="Moag" href="/Moag">Moag</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Fields of Summer'); return false;" href="http://www.magiccards.info/query?q=%21Fields+of+Summer" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Feeding Grounds" href="/Feeding_Grounds">Feeding Grounds</a> </td>
+<td> <a title="Muraganda" href="/Muraganda">Muraganda</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Feeding Grounds'); return false;" href="http://www.magiccards.info/query?q=%21Feeding+Grounds" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Phyrexia" href="/Phyrexia#Fourth_Sphere">The Fourth Sphere</a> </td>
+<td> <a title="Phyrexia" href="/Phyrexia">Phyrexia</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Fourth Sphere'); return false;" href="http://www.magiccards.info/query?q=%21The+Fourth+Sphere" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Horizon Boughs" href="/Horizon_Boughs">Horizon Boughs</a> </td>
+<td> <a title="Pyrulea" href="/Pyrulea">Pyrulea</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Horizon Boughs'); return false;" href="http://www.magiccards.info/query?q=%21Horizon+Boughs" class="autocardhref">Card</a> </td>
+<td> <i><a title="Zendikar" href="/Zendikar">Zendikar</a></i> Gateway Season
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Sea of Sand" href="/Sea_of_Sand">Sea of Sand</a> </td>
+<td> <a class="mw-redirect" title="Rabiah" href="/Rabiah">Rabiah</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Sea of Sand'); return false;" href="http://www.magiccards.info/query?q=%21Sea+of+Sand" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Stronghold (location)" href="/Stronghold_(location)">Stronghold Furnace</a> </td>
+<td> <a title="Rath" href="/Rath">Rath</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Stronghold Furnace'); return false;" href="http://www.magiccards.info/query?q=%21Stronghold+Furnace" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Agyrem" href="/Agyrem">Agyrem</a> </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Agyrem'); return false;" href="http://www.magiccards.info/query?q=%21Agyrem" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Izzet" href="/Izzet">Izzet Steam Maze</a> </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Izzet Steam Maze'); return false;" href="http://www.magiccards.info/query?q=%21Izzet+Steam+Maze" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Undercity Reaches" href="/Undercity_Reaches">Undercity Reaches</a> </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Undercity Reaches'); return false;" href="http://www.magiccards.info/query?q=%21Undercity+Reaches" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="The Hippodrome" href="/The_Hippodrome">The Hippodrome</a> </td>
+<td> <a title="Segovia" href="/Segovia">Segovia</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Hippodrome'); return false;" href="http://www.magiccards.info/query?q=%21The+Hippodrome" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a title="Serra's Realm" href="/Serra%27s_Realm#Geography">Sanctum of</a> </td>
+<td> <a title="Serra's Realm" href="/Serra%27s_Realm">Serra's Realm</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Sanctum of Serra'); return false;" href="http://www.magiccards.info/query?q=%21Sanctum+of+Serra" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Metallic Dreams" href="/Metallic_Dreams">Metallic Dreams</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Eloren Wilds" href="/Eloren_Wilds">Eloren Wilds</a> </td>
+<td> <a title="Shandalar" href="/Shandalar">Shandalar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Eloren Wilds'); return false;" href="http://www.magiccards.info/query?q=%21Eloren+Wilds" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Raven's Run" href="/Raven%27s_Run">Raven's Run</a> </td>
+<td> <a class="mw-redirect" title="Shadowmoor (plane)" href="/Shadowmoor_(plane)">Shadowmoor</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Raven%27s Run'); return false;" href="http://www.magiccards.info/query?q=%21Raven%27s+Run" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Dark Barony" href="/Dark_Barony">The Dark Barony</a> </td>
+<td> <a title="Ulgrotha" href="/Ulgrotha">Ulgrotha</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Dark Barony'); return false;" href="http://www.magiccards.info/query?q=%21The+Dark+Barony" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Zombie Empire" href="/Zombie_Empire">Zombie Empire</a>
+</td></tr>
+<tr>
+<td> <a title="Immersturm" href="/Immersturm">Immersturm</a> </td>
+<td> <a title="Valla" href="/Valla">Valla</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Immersturm'); return false;" href="http://www.magiccards.info/query?q=%21Immersturm" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Naar Isle" href="/Naar_Isle">Naar Isle</a> </td>
+<td> <a title="Wildfire" href="/Wildfire">Wildfire</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Naar Isle'); return false;" href="http://www.magiccards.info/query?q=%21Naar+Isle" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Strike Force" href="/Strike_Force">Strike Force</a>
+</td></tr>
+<tr>
+<td> <a title="Murasa" href="/Murasa">Murasa</a> </td>
+<td> <a title="Zendikar (plane)" href="/Zendikar_(plane)">Zendikar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Murasa'); return false;" href="http://www.magiccards.info/query?q=%21Murasa" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> deck <a title="Elemental Thunder" href="/Elemental_Thunder">Elemental Thunder</a>
+</td></tr>
+<tr>
+<td> <a title="Tazeem" href="/Tazeem">Tazeem</a> </td>
+<td> <a title="Zendikar (plane)" href="/Zendikar_(plane)">Zendikar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Tazeem'); return false;" href="http://www.magiccards.info/query?q=%21Tazeem" class="autocardhref">Card</a> </td>
+<td> <i><a title="Planechase (2009)" href="/Planechase_(2009)">Planechase (2009)</a></i> Release Event
+</td></tr>
+<tr>
+<td> <a title="Akoum" href="/Akoum">Akoum</a> </td>
+<td> <a title="Zendikar (plane)" href="/Zendikar_(plane)">Zendikar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Akoum'); return false;" href="http://www.magiccards.info/query?q=%21Akoum" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a title="Aretopolis" href="/Aretopolis">Aretopolis</a> </td>
+<td> <a title="Kephalai" href="/Kephalai">Kephalai</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Aretopolis'); return false;" href="http://www.magiccards.info/query?q=%21Aretopolis" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Astral Arena" href="/Astral_Arena">Astral Arena</a> </td>
+<td> <a title="Kolbahan" href="/Kolbahan">Kolbahan</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Astral Arena'); return false;" href="http://www.magiccards.info/query?q=%21Astral+Arena" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a title="Equilor" href="/Equilor#Description">Bloodhill Bastion</a> </td>
+<td> <a title="Equilor" href="/Equilor">Equilor</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Bloodhill Bastion'); return false;" href="http://www.magiccards.info/query?q=%21Bloodhill+Bastion" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> Edge of <a class="mw-redirect" title="Malacol" href="/Malacol">Malacol</a> </td>
+<td> <a title="Belenon" href="/Belenon">Belenon</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Edge of Malacol'); return false;" href="http://www.magiccards.info/query?q=%21Edge+of+Malacol" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a title="New Phyrexia (plane)" href="/New_Phyrexia_(plane)#The_Quiet_Furnace">Furnace Layer</a> </td>
+<td> <a title="New Phyrexia (plane)" href="/New_Phyrexia_(plane)">New Phyrexia</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Furnace Layer'); return false;" href="http://www.magiccards.info/query?q=%21Furnace+Layer" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Gavony" href="/Gavony">Gavony</a> </td>
+<td> <a title="Innistrad (plane)" href="/Innistrad_(plane)">Innistrad</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Gavony'); return false;" href="http://www.magiccards.info/query?q=%21Gavony" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> <a title="Glen Elendra" href="/Glen_Elendra">Glen Elendra</a> </td>
+<td> <a class="mw-redirect" title="Lorwyn (plane)" href="/Lorwyn_(plane)">Lorwyn</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Glen Elendra'); return false;" href="http://www.magiccards.info/query?q=%21Glen+Elendra" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> Grand Ossuary </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Grand Ossuary'); return false;" href="http://www.magiccards.info/query?q=%21Grand+Ossuary" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> Grove of the Dreampods </td>
+<td> <a title="Fabacin" href="/Fabacin">Fabacin</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Grove of the Dreampods'); return false;" href="http://www.magiccards.info/query?q=%21Grove+of+the+Dreampods" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Hedron" href="/Hedron">Hedron</a> Fields of <a class="mw-redirect" title="Agadeem" href="/Agadeem">Agadeem</a> </td>
+<td> <a title="Zendikar (plane)" href="/Zendikar_(plane)">Zendikar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Hedron Fields of Agadeem'); return false;" href="http://www.magiccards.info/query?q=%21Hedron+Fields+of+Agadeem" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> <a title="Jund" href="/Jund">Jund</a> </td>
+<td> <a title="Alara" href="/Alara">Alara</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Jund'); return false;" href="http://www.magiccards.info/query?q=%21Jund" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Kessig" href="/Kessig">Kessig</a> </td>
+<td> <a title="Innistrad (plane)" href="/Innistrad_(plane)">Innistrad</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Kessig'); return false;" href="http://www.magiccards.info/query?q=%21Kessig" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> Kharasha Foothills </td>
+<td> <a title="Mongseng" href="/Mongseng">Mongseng</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Kharasha Foothills'); return false;" href="http://www.magiccards.info/query?q=%21Kharasha+Foothills" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> Kilnspire District </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Kilnspire District'); return false;" href="http://www.magiccards.info/query?q=%21Kilnspire+District" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> Lair of the Ashen Idol </td>
+<td> <a title="Azgol" href="/Azgol">Azgol</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Lair of the Ashen Idol'); return false;" href="http://www.magiccards.info/query?q=%21Lair+of+the+Ashen+Idol" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Regatha" href="/Regatha#Notable_locations">Mount Keralia</a> </td>
+<td> <a title="Regatha" href="/Regatha">Regatha</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Mount Keralia'); return false;" href="http://www.magiccards.info/query?q=%21Mount+Keralia" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> <a title="Nephalia" href="/Nephalia">Nephalia</a> </td>
+<td> <a title="Innistrad (plane)" href="/Innistrad_(plane)">Innistrad</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Nephalia'); return false;" href="http://www.magiccards.info/query?q=%21Nephalia" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> <a title="Elesh Norn" href="/Elesh_Norn">Norn's</a> Dominion </td>
+<td> <a title="New Phyrexia (plane)" href="/New_Phyrexia_(plane)">New Phyrexia</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Norn%27s Dominion'); return false;" href="http://www.magiccards.info/query?q=%21Norn%27s+Dominion" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Onakke" href="/Onakke">Onakke</a> Catacomb </td>
+<td> <a title="Shandalar" href="/Shandalar">Shandalar</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Onakke Catacomb'); return false;" href="http://www.magiccards.info/query?q=%21Onakke+Catacomb" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Orochi" href="/Orochi">Orochi</a> Colony </td>
+<td> <a title="Kamigawa" href="/Kamigawa">Kamigawa</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Orochi Colony'); return false;" href="http://www.magiccards.info/query?q=%21Orochi+Colony" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Orzhova" href="/Orzhova">Orzhova</a> </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Orzhova'); return false;" href="http://www.magiccards.info/query?q=%21Orzhova" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> <a title="Prahv" href="/Prahv">Prahv</a> </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Prahv'); return false;" href="http://www.magiccards.info/query?q=%21Prahv" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Quicksilver Sea" href="/Quicksilver_Sea">Quicksilver Sea</a> </td>
+<td> <a class="mw-redirect" title="Mirrodin (plane)" href="/Mirrodin_(plane)">Mirrodin</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Quicksilver Sea'); return false;" href="http://www.magiccards.info/query?q=%21Quicksilver+Sea" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> <a class="mw-redirect" title="Selesnya" href="/Selesnya">Selesnya</a> Loft Gardens </td>
+<td> <a class="mw-redirect" title="Ravnica (plane)" href="/Ravnica_(plane)">Ravnica</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Selesnya Loft Gardens'); return false;" href="http://www.magiccards.info/query?q=%21Selesnya+Loft+Gardens" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> Stairs to Infinity </td>
+<td> <a title="Xerex" href="/Xerex">Xerex</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Stairs to Infinity'); return false;" href="http://www.magiccards.info/query?q=%21Stairs+to+Infinity" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> Release Event
+</td></tr>
+<tr>
+<td> <a title="Stensia" href="/Stensia">Stensia</a> </td>
+<td> <a title="Innistrad (plane)" href="/Innistrad_(plane)">Innistrad</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Stensia'); return false;" href="http://www.magiccards.info/query?q=%21Stensia" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Primordial Hunger" href="/Primordial_Hunger">Primordial Hunger</a>
+</td></tr>
+<tr>
+<td> <a title="Takenuma" href="/Takenuma">Takenuma</a> </td>
+<td> <a class="mw-redirect" title="Kamigawa (plane)" href="/Kamigawa_(plane)">Kamigawa</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Takenuma'); return false;" href="http://www.magiccards.info/query?q=%21Takenuma" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> <a title="Talon Gates" href="/Talon_Gates">Talon Gates</a> </td>
+<td> <a title="Dominaria" href="/Dominaria">Dominaria</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Talon Gates'); return false;" href="http://www.magiccards.info/query?q=%21Talon+Gates" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Savage Auras" href="/Savage_Auras">Savage Auras</a>
+</td></tr>
+<tr>
+<td> The Zephyr Maze </td>
+<td> <a title="Kyneth" href="/Kyneth">Kyneth</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('The Zephyr Maze'); return false;" href="http://www.magiccards.info/query?q=%21The+Zephyr+Maze" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Night of the Ninja" href="/Night_of_the_Ninja">Night of the Ninja</a>
+</td></tr>
+<tr>
+<td> Trail of the Mage-Rings </td>
+<td> <a title="Vryn" href="/Vryn">Vryn</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Trail of the Mage-Rings'); return false;" href="http://www.magiccards.info/query?q=%21Trail+of+the+Mage-Rings" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> Truga Jungle </td>
+<td> <a title="Ergamon" href="/Ergamon">Ergamon</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Truga Jungle'); return false;" href="http://www.magiccards.info/query?q=%21Truga+Jungle" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr>
+<tr>
+<td> Windriddle Palaces </td>
+<td> <a title="Belenon" href="/Belenon">Belenon</a> </td>
+<td> <a style="color: #804000;font-weight: bold;" title="Card" onclick="AutoCard('Windriddle Palaces'); return false;" href="http://www.magiccards.info/query?q=%21Windriddle+Palaces" class="autocardhref">Card</a> </td>
+<td> <i><a class="mw-redirect" title="Planechase (2012)" href="/Planechase_(2012)">Planechase (2012)</a></i> deck <a title="Chaos Reigns" href="/Chaos_Reigns">Chaos Reigns</a>
+</td></tr></tbody><tfoot></tfoot></table>
