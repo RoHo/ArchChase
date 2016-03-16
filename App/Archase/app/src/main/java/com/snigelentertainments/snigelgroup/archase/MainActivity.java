@@ -1,5 +1,7 @@
 package com.snigelentertainments.snigelgroup.archase;
 
+import android.app.ActionBar;
+import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-
+        ActionBar bar = getActionBar();
+        if (bar == null){
+            Log.w(TAG, "could not access actionbar from main activity");
+        }
+        setTitle("Archase");
     }
 
 

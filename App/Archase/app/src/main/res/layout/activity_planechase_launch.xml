@@ -9,15 +9,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.snigelentertainments.snigelgroup.archase.planechase.PlanechaseLaunch">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView2"
+        android:text="Quick start\n(random)"
+        android:id="@+id/b_random"
+        android:layout_marginTop="59dp"
+        android:textSize="20dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="73dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="64dp" />
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_quickAccess"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dropdown" />
+
 </RelativeLayout>
