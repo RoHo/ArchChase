@@ -28,15 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClickPlanechase(View view){
         Log.d(TAG, "launching planechase laucnher");
         if (view.getId() == R.id.b_planechase){
-            Context context = this.getApplicationContext();
-            String text = "Planechase not yet implemented!";
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-
-            //Intent i = new Intent(MainActivity.this, PlanechaseLaunch.class);
-            //startActivity(i);
+            Intent i = new Intent(MainActivity.this, PlanechaseLaunch.class);
+            startActivity(i);
 
         }
         else {
