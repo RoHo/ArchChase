@@ -16,7 +16,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".planechase.PlanechaseLaunch">
-        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"> -->
+
+            <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".PileActivityFullscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_pile"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".PileActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

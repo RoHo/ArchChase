@@ -1,15 +1,27 @@
 package com.snigelentertainments.snigelgroup.archase.planechase;
 
 import android.app.ActionBar;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
+import com.snigelentertainments.snigelgroup.archase.PileActivity;
+import com.snigelentertainments.snigelgroup.archase.PileActivityFullscreen;
 import com.snigelentertainments.snigelgroup.archase.R;
 import com.snigelentertainments.snigelgroup.archase.MainActivity;
+
+import misc.stack.CStack;
+import misc.stack.HeapFactory;
+import misc.stack.PileItem;
 
 
 public class PlanechaseLaunch extends AppCompatActivity {
@@ -34,13 +46,44 @@ public class PlanechaseLaunch extends AppCompatActivity {
 
         Log.v(TAG, "setting onItemClickListeener for spinner");
         this.selectList = (Spinner) findViewById(R.id.sp_quickAccess);
-        this.selectList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        this.selectList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Object listItem = PlanechaseLaunch.this.selectList.getSelectedItem();
-                
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Log.v(TAG, String.format("onItemSelected pos: %d", position));
+                Object selection = parent.getSelectedItem();
+                Log.v(TAG, selection.toString());
+                //PlanechaseLaunch.this.startDeck();
+
+                if (position <= 0){
+                    Log.v(TAG, String.format("spinner ignored with pos=%d", position));
+                }
+                else{
+                    Log.v(TAG, String.format("Spinner selection accepted with %d:%s", position, selection.toString()));
+                    //PlanechaseLaunch.this.startDeck(selection.toString());
+                    Context context = PlanechaseLaunch.this.getApplicationContext();
+                    String text = "Real deck lists not yet implemented!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                Log.v(TAG, "nothing selected");
+                //do nothing
+            }
+
         });
+        String spinnerItems[] = {"Preconstructed Deck", "Deck1", "Deck2", "Deck3"};
+        //String spinnerItems[] = new String[3];
+        //spinnerItems[0] = "Deck1";
+        //spinnerItems[1] = "Deck2";
+        //spinnerItems[2] = "Deck3";
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, spinnerItems);
+        //TODO find a prettier look for the spinner, i.e. increased text size
+        this.selectList.setAdapter(spinnerAdapter);
 
     }
 
@@ -51,14 +94,37 @@ public class PlanechaseLaunch extends AppCompatActivity {
      */
     public void startRandom40(View view){
 
+        Log.d(TAG, "startRandom40");
+
+        Context context = this.getApplicationContext();
+        String text = "Random not yet COMPLETLY implemented!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        //toast.show();
+
+        CStack<PileItem> myPile = null;
+        //TODO change 5 to 40
+        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 5,2, getAssets());
+
+        Log.v(TAG, "creating pileactivity intent");
+
+        Intent i = new Intent(PlanechaseLaunch.this, PileActivity.class);
+        i.putExtra("cstack", myPile);
+        i.putExtra("type", "Random");
+        startActivity(i);
+
     }
 
     /**
      * starts a game with a stack which belongs to one preconstructed deck
-     * @param view
+     * @param deckname
      */
-    public void startDeck(View view){
+    public void startDeck(String deckname){
+        Log.d(TAG, String.format("startDeck started with %s", deckname));
 
+        Intent i = new Intent(PlanechaseLaunch.this, PileActivity.class);
+        startActivity(i);
 
     }
 
