@@ -3,8 +3,6 @@ package com.snigelentertainments.snigelgroup.archase.planechase;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,8 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.snigelentertainments.snigelgroup.archase.PileActivity;
-import com.snigelentertainments.snigelgroup.archase.PileActivityFullscreen;
+import com.snigelentertainments.snigelgroup.archase.PileLandscapeActivity;
 import com.snigelentertainments.snigelgroup.archase.R;
 import com.snigelentertainments.snigelgroup.archase.MainActivity;
 
@@ -87,6 +84,35 @@ public class PlanechaseLaunch extends AppCompatActivity {
 
     }
 
+    /**
+     * starts a game with a stack of 40 random cards, no card more than twice allowed
+     * @param view
+     */
+    public void startRandomN(View view){
+
+        Log.d(TAG, "startRandom40");
+
+        Context context = this.getApplicationContext();
+        String text = "Random not yet COMPLETLY implemented!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        //toast.show();
+
+        CStack<PileItem> myPile = null;
+        //TODO change 5 to 40
+
+        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2, getAssets());
+
+        Log.v(TAG, "creating pileactivity intent");
+
+        Intent i = new Intent(PlanechaseLaunch.this, PileLandscapeActivity.class);
+        i.putExtra("cstack", myPile);
+        i.putExtra("type", "Random");
+        startActivity(i);
+
+    }
+
 
     /**
      * starts a game with a stack of 40 random cards, no card more than twice allowed
@@ -105,11 +131,12 @@ public class PlanechaseLaunch extends AppCompatActivity {
 
         CStack<PileItem> myPile = null;
         //TODO change 5 to 40
-        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 5,2, getAssets());
+
+        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2, getAssets());
 
         Log.v(TAG, "creating pileactivity intent");
 
-        Intent i = new Intent(PlanechaseLaunch.this, PileActivity.class);
+        Intent i = new Intent(PlanechaseLaunch.this, PileLandscapeActivity.class);
         i.putExtra("cstack", myPile);
         i.putExtra("type", "Random");
         startActivity(i);
@@ -123,7 +150,7 @@ public class PlanechaseLaunch extends AppCompatActivity {
     public void startDeck(String deckname){
         Log.d(TAG, String.format("startDeck started with %s", deckname));
 
-        Intent i = new Intent(PlanechaseLaunch.this, PileActivity.class);
+        Intent i = new Intent(PlanechaseLaunch.this, PileLandscapeActivity.class);
         startActivity(i);
 
     }

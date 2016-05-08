@@ -56,4 +56,14 @@
         android:textSize="16dp"
         android:layout_below="@+id/b_planechase"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:drawableLeft="@drawable/kmf_small"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_todo"
+        android:layout_below="@+id/b_planechase"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

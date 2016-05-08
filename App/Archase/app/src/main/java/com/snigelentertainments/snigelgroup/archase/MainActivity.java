@@ -1,7 +1,6 @@
 package com.snigelentertainments.snigelgroup.archase;
 
 import android.app.ActionBar;
-import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.snigelentertainments.snigelgroup.archase.archenemy.ArchenemyLaunch;
 import com.snigelentertainments.snigelgroup.archase.planechase.PlanechaseLaunch;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,11 +48,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "launching archenemy launcher");
         if (view.getId() == R.id.b_archenemy){
             Context context = this.getApplicationContext();
-            String text = "Archenemy not yet implemented!";
+            String text = "Archenemy currently under development!";
             int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+
+            Intent i = new Intent(MainActivity.this, ArchenemyLaunch.class);
+            startActivity(i);
         }
         else {
             String v = (String)(view == null?"null":view.getId());

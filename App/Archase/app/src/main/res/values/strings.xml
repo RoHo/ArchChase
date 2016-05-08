@@ -4,4 +4,6 @@
     <string name="title_activity_pile">PileActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="b_todo">b_todo</string>
+    <string name="title_activity_archenemy_launch">ArchenemyLaunch</string>
 </resources>

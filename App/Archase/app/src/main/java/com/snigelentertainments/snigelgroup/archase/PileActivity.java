@@ -3,16 +3,12 @@ package com.snigelentertainments.snigelgroup.archase;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +32,7 @@ public class PileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "pileactivity oncreated");
-        setContentView(R.layout.activity_pile2);
+        setContentView(R.layout.activity_pile);
 
         bOracle = (Button) findViewById(R.id.b_oracle);
         bNext = (Button) findViewById(R.id.b_next);
@@ -56,6 +52,7 @@ public class PileActivity extends Activity {
 
         Context context = this.getApplicationContext();
         String text = String.format("Heap\nType: \t%s\nPile size: \t%d", type, this.myPile.get_size());
+        Log.v(TAG, text);
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
@@ -82,7 +79,47 @@ public class PileActivity extends Activity {
         iview.refreshDrawableState();
 
         tvTitle.setText(firstEntry.getName());
+        tvTitle.setVisibility(View.INVISIBLE);
     }
+
+    public void onClickNextCard(View view){
+        Log.d(TAG, "onClickNextCard");
+
+        if (view.getId() == R.id.b_next || view.getId() == R.id.iv_background){
+            //flip the pile
+            PileItem pi = this.myPile.turn_over();
+            //get path to picture
+            String firstDrawableName = (String)pi.getPicture();
+            Log.v(TAG, String.format("new pi address: %s", firstDrawableName));
+
+            AssetManager assetManager = getAssets();
+            InputStream istr = null;
+            try {
+                istr = assetManager.open(firstDrawableName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Drawable firstDrawable = Drawable.createFromStream(istr, firstDrawableName);
+
+            Log.v(TAG, String.format("pi entry: %s", pi));
+            Log.v(TAG, String.format("pi drawable: %s", firstDrawable));
+
+            // update oracle and title
+            String oracleText = this.myPile.get_first().getOracle();
+            String titleText = this.myPile.get_first().getName();
+            this.tvTitle.setText(titleText);
+            this.tvOracle.setText(oracleText);
+
+            ImageView iview = (ImageView) findViewById(R.id.iv_background);
+            iview.setImageDrawable(firstDrawable);
+            iview.refreshDrawableState();
+        }
+        else {
+            String v = "" + (view == null?"null":view.getId());
+            Log.w(TAG, String.format("Tried going to the next card with the wrong view: %s", v));
+        }
+    }
+
 
     public void toggleLegend(View view){
         Log.d(TAG, "Legendviewtoggled");
@@ -121,12 +158,17 @@ public class PileActivity extends Activity {
             */
             if (this.tvOracle.getVisibility()==View.INVISIBLE) {
                 String oracleText = this.myPile.get_first().getOracle();
+                String titleText = this.myPile.get_first().getName();
+                Log.v(TAG, String.format("firstItem: %s", this.myPile.get_first()));
+                this.tvTitle.setText(titleText);
+                this.tvTitle.setVisibility(View.VISIBLE);
                 this.tvOracle.setText(oracleText);
                 this.tvOracle.setVisibility(View.VISIBLE);
             }
             else{
                 this.tvOracle.setText("");
                 this.tvOracle.setVisibility(View.INVISIBLE);
+                this.tvTitle.setVisibility(View.INVISIBLE);
             }
         }
         else {
