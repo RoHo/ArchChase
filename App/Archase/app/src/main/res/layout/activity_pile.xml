@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".PileLandscapeActivity"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    tools:context=".PileActivity"
     android:id="@+id/rl_activity">
 
     <ImageView
@@ -18,60 +18,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:onClick="onClickNextCard"
-        android:clickable="true"
+        android:clickable="false"
         android:contextClickable="false"
         android:cropToPadding="false" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next"
-        android:id="@+id/b_next"
-        android:layout_above="@+id/b_scry"
-        android:layout_alignParentLeft="true"
-        android:visibility="visible"
-        android:layout_alignParentStart="true"
-        android:clickable="true"
-        android:enabled="true"
-        android:onClick="onClickNextCard"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="scry"
-        android:id="@+id/b_scry"
-        android:layout_above="@+id/b_shuffle"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="onClickScry"
-        android:visibility="visible" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="shuffle"
-        android:id="@+id/b_shuffle"
-        android:visibility="visible"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="49dp"
-        android:clickable="true"
-        android:enabled="true"
-        android:onClick="onClickShuffle" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="oracle"
-        android:id="@+id/b_oracle"
-        android:layout_alignParentBottom="true"
-        android:visibility="visible"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:enabled="true"
-        android:clickable="true"
-        android:onClick="onClickOracle" />
 
     <Button
         android:layout_width="wrap_content"
@@ -84,9 +34,7 @@
         android:clickable="true"
         android:enabled="true"
         android:onClick="toggleLegend"
-        android:drawableLeft="@drawable/visible"
-        android:text=""
-        />
+        android:drawableLeft="@drawable/visible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,19 +47,119 @@
         android:background="#050505"
         android:textSize="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/tv_oracle"
-        android:visibility="invisible"
-        android:layout_toRightOf="@+id/b_shuffle"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/lo_control"
+        android:layout_alignBottom="@+id/iv_background"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:enabled="true"
-        android:layout_below="@+id/b_scry" />
+        android:layout_alignParentEnd="true">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="&lt;&lt;"
+            android:id="@+id/b_prev"
+            android:visibility="visible"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="onClickPrevCard"
+            android:layout_alignBottom="@+id/iv_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="oracle"
+            android:id="@+id/b_oracle"
+            android:visibility="visible"
+            android:layout_alignParentStart="true"
+            android:enabled="true"
+            android:clickable="true"
+            android:onClick="onClickOracle"
+            android:layout_above="@+id/b_prev"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="scry"
+            android:id="@+id/b_scry"
+            android:layout_alignParentStart="true"
+            android:onClick="onClickScry"
+            android:visibility="invisible"
+            android:layout_above="@+id/b_shuffle"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="shuffle"
+            android:id="@+id/b_shuffle"
+            android:visibility="invisible"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="onClickShuffle"
+            android:layout_above="@+id/b_oracle"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=">>>"
+            android:id="@+id/b_next"
+            android:visibility="visible"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="onClickNextCard"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lo_frame"
+        android:layout_above="@+id/lo_control"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:launchMode="singleInstance">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_oracle"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:enabled="false"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textColorHighlight="#171717"
+            android:background="#ff303030" />
+
+
+    </FrameLayout>
 
 
 </RelativeLayout>

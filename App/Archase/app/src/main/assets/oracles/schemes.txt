@@ -1,0 +1,235 @@
+Name
+Type: [Oneshot:"", ongoing:"An ongoing scheme remains face up until it's abandoned."]
+Oracle: <>
+
+Name: All in Good Time
+Type: Oneshot
+Oracle: ..., take an extra turn after this one. Schemes can't be set in motion that turn.
+
+Name: A Display of My Dark Power
+Type: Oneshot
+Oracle: ..., until your next turn, whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+
+Name: All Shall Smolder in My Wake
+Type: Oneshot
+Oracle: ..., destroy up to one target artefact, up to one target enchantment, and up to one target nonbasic land.
+
+Name: Appoach My Molten Realm
+Type: Oneshot
+Oracle: ..., until your next turn, if a source would deal damage, it deals double that damage instead.
+
+Name: Behold the Power of Destruction
+Type: Oneshot
+Oracle: ..., destroyj all nonland permanents target opponent controls.
+
+Name: Choose Your Champion
+Type: Oneshot
+Oracle: ..., target opponent chooses a player. Until your next turn, only you and the chosen player can cast spells or attack with creatures.
+
+Name: Dance, Pathetic Marionette
+Type: Oneshot
+Oracle: ..., each opponent reveals cards from the top of his or her library until he or she reveals a creature card. Choose one of these revealed cards and put it into the battlefield under your control. Put all other cards revealed this way into their owners' graveyards.
+
+Name: Drench the Soil in Their Blood
+Type: Oneshot
+Oracle: ..., after this main phase, there is an additional combat phase followed by an additional main phase. Creatures you control gain vigilance until end of turn.
+
+Name: Embrace My Diaoblical Vision
+Type: Oneshot
+Oracle: ..., each player shuffles his or her hand and graveyard into his or her library. You draw seven cards, then each other player draws four cards.
+
+Name: Every Hope Shall Vanish
+Type: Oneshot
+Oracle: ..., each opponent reveals his or her hand. Choose a nonland card from each of those hand. Those players discard those cards.
+Flavour: Oh, I think I will get away with this.
+
+Name: Every Last Vestige Shall Rot
+Type: Oneshot
+Oracle: ..., you may pay {X}. If you do, put each nonland permanent target player controls with converted mana cost X or less on the bottom of its owner's library.
+Flavour: "May bloodberries grow from your remains."
+
+Name: Evil Comes to Fruitation
+Type: Oneshot
+Oracle: ..., put seven 0/1 green Plant creature tokens onto the battlefield. If you control then or more lands, put seven 3/3 green Elemental creature tokens onto the battlefield instead.
+Flavour: "The plants justify the means."
+
+Name: Feed the Machine
+Type: Oneshot
+Oracle: ..., target opponents chooses self or others. If that player chooses self, he or she sacrifices two creatures. If the player chooses others, each of your opponents sacrifices a creature.
+Flavour: Even you have a purpose. Your blood will oil the gears.
+
+Name: I Bask in Your Silent Awe
+Type: Ongoing
+Oracle: Each opponent can't cast more than one spell each turn.\n At the beginning of your upkeep, in no opponent cast a spell since your last turn ended, abandon this scheme.
+
+
+Name: I Call on the Ancient Magics
+Type: Oneshot
+Oracle: ..., each other player searches his or her library for a card, reveals it, and puts it into his or her hand. Then you search your library for two cards and put them into your hand. Each player shuffles his or her library.
+
+Name: I Delight in Your Convulsions
+Type: Oneshot
+Oracle: ..., each opponent loses 3 life. You gain life equal to the life lost this way.
+Flavour: I can't imagine what you're feeling right now, but I'll try my best.
+
+Name: I Know All, I See All
+Type: Ongoing
+Oracle: Untap all permanents you control during each opponent's untap step.\n At the beginning of each end step, if three or more cards were put into your graveyard this turn from anywhere, abandon this scheme.
+
+Name: Ignite the Cloneforge!
+Type: Oneshot
+Oracle: ..., put a token onto the battlefield that's a copy of target permanent an opponent controls.
+Flavour: Heroes innovate. Villains duplicate
+
+Name: Imprison This Insolent Wretch
+Type: Ongoing
+Oracle: ..., choose an opponent.\n Permanents the chosen player controls don't untap during his or her untap step.\n When the chosen player is attacked or becomes the target of a spell or ability, abandon this scheme.
+
+Name: Into the Earthen Maw
+Type: Oneshot
+Oracle: ..., exile up to one targt creature with flying, up to one target creature without flying, and all cards from up to one target opponent's graveyard.
+Flavour: You may even see them again. Full digestion takes three hundred years.
+
+Name: Introductions Are in Order
+Type: Oneshot
+Oracle: ..., choose one - Search your library for a creature card, reveal it, put it into yourhand, then shuffle your library; or you may put a creature card from your hand onto the battlefield.
+Flavour: Mett my newest minion. Come now, don't be shy - shake her pincer.
+
+Name: Know Naught by Fire
+Type: Oneshot
+Oracle: ..., it deals damage to each opponent equal to the number of cards in that player's hand.
+Flavour: Cranial explosions for everyone. Still planning to outthink my dragons?
+
+Name: Look Skyward and Despair
+Type: Oneshot
+Oracle: ..., put a 5/5 red Dragon token with flying onto the battlefield.
+Flavour: Today I take the reins of destiny itself. Today the Draconic Apocalypse is upon you.
+
+Name: May Civilization Collapse
+Type: Oneshot
+Oracle: ..., target opponent chooses self or others. If that player chooses self, he or she sacrifices two lands. If the player chooses others, each of your other opponents sacrifices a land.
+Flavour: This should halr the spread of your insolence.
+
+Name:  Mortal Flesh is Weak
+Type: Oneshot
+Oracle: ..., each opponent's life total becomes the lowest  life total amonf your opponents.
+Flavour: I certainly would have accepted my offer to eternal life. But if you choose death instead, who am I to argue?
+
+Name: My Crushing Masterstroke
+Type: Oneshot
+Oracle: ..., gain control of all nonland permanents your opponents control until end of turn. Untap those permanents. They gain haste until end of turn. Each of them attacks its owner this turn if able.
+
+Name: My Genius Knows No Bounds
+Type: Oneshot
+Oracle: ..., you may pay {x}. If you do, you gain X life and draw X cards.
+Flavour: I can see... everything. The beginning and the end of time. The raw edges of reality. And now I see exactly hot to kill you.
+
+Name: My Undead Horde Awakens
+Type: Ongoing
+Oracle: At the beginnnig of your end step, you may put target creature card from an oppontent's graveyard onto the battlefield under your control.\n When a creature put onto the battlefield with this scheme is put into a graveyardm abandon this scheme.
+
+Name: My Wish Is Your Command
+Type: Oneshot
+Oracle: ..., each opponent reveals his or her hand. You may choose a noncreature, nonland card revealed this way and cast it without paying its mana cost.
+Flavour: Indulge me. Just one spell. One potentially fatal spell gone horrible awry.
+
+Name: Nature Demands an Offering
+Type: Oneshot
+Oracle: ..., target opponent chooses a creatue you don't control and puts it on top of its owner's library, then repeats this process for an artefact, an enchantment, and a land. Then the owner of each permanent chosen thisway shuffles his or her library.
+
+Name: Nature shields Its Own
+Type: ongoing
+Oracle: Whenever a creature attacks and isn't blocked, if you're the defending player, put a 0/1 green Plant creature token onto the battlefield blocking that creature.\n When you become the defending player for four or more attacking creatures, abandon this scheme at end of combat.
+
+
+Name: Nothing Can Stop Me Now
+Type: Ongoing
+Oracle: If a source an opponent controls would deal damage to you, prevent 1 of that damage.\n At the beginning of each end step, ir you've been dealt 5 or more damage this turn, abandon this scheme.
+
+Name: Only Blood Ends Your Nightmares
+Type: Oneshot
+Oracle: ..., each opponent sacrifices a creature. Then each opponent who didn't sacrifice a creature didcards two cards.
+Flavour: But nothing will end your regret.
+
+Name: Perhaps You've Met My Cohort
+Type: Oneshot
+Oracle: ..., search your library for a planeswalker card, put it onto the battlefield, then shuffle your library.
+Flavour: I'm calling in a favor from an old friend. Once you're all dead, I'll consider the matter settled.
+
+Name: Plots That Span Centuries
+Type: Oneshot
+Oracle: ..., the next time you would set a scheme in motion, set three schemes in motion instead.
+Flavour: I don't expect you to understeand the myriad ways in which you're about ot die.
+
+Name: Realms Befitting My Majesty
+Type: Oneshot
+Oracle: ... search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+Flavour: Look around you. All you behold is mine to rule. It's the natural way.
+
+Name: Roots of All Evil
+Type: Oneshot
+Oracle: ..., put five 1/1 green Saproling creature tokens onto the battlefield.
+Flavour: I assure you, these are not the kind that thrive on sunlight and water.
+
+Name: Rotten Ones, Lay Siege
+Type: Oneshot
+Oracle: ..., for each opponent, put a 2/2 black Zombie creature token onto the battlefield that attacks that player each combat if able.
+Flavour: Don't come back until you've got brains in your teeth.
+
+Name: Surrender Your Thoughts
+Type: Oneshot
+Oracle: ..., target opponent chooses self or others. If that player chooses self, he or she discards four cards. If the player chooses others, each of your other opponents discards two cards.
+Flavour: Or, if you prefer, just surrender.
+
+Name: The Dead Shall Serve
+Type: Oneshot
+Oracle: ..., for each opponent, put up to one target creature card from that player's graveyard onto the battlefield under your control. Each of thee creatures attacks its owner each combat if able.
+Flavour: Tell your old master I said hello.
+
+Name: The Fate of the Flamable
+Type: Oneshot
+Oracle: ..., target opponetn chooses self, this scheme deals 6 damage to him or her. If the player chooses others, this scheme deals 3 damage to each of your other opponents.
+
+Name: The Iron Guardian Stirs
+Type: Oneshot
+Oracle: ..., put a 4/6 colourless Golem artefact creature token onto the battlefield.
+Flavour: It would be disappointing if you were unable to overcome this simplest of defenses. Hilarious, but disappointing.
+
+Name: The Pieces Are Coming Together
+Type: Oneshot
+Oracle: ..., draw two cards. Artefact spells you cast this turn cost {2} less to cast.
+Flavour: Cretins buld maschines. I construct destiny.
+
+Name: The Very Soil Shall Shake
+Type: Ongoing
+Oracle: Creatures you control get +2/+2 and have trample.\n When a creature you control is put into a graveyard from the battlefield, abandon this scheme.
+
+Name: Tootj, Claw, and Tail
+Type: Oneshot
+Oracle: ..., destroy up to three target nonland permanents.
+Flavour: Silence your wailing. This is but a taste of the descruction my pets have in store.
+
+Name: Which of You Burns the Brightest?
+Type: Oneshot
+Oracle: ..., you may pay {X}. If you do, this scheme deals X damage to target opponent and each creature he or she controls.
+Flavour: Let that be a lesson to you, your family, and everyone you're ever known.
+
+Name: Your Fate is Thrice Sealed
+Type: Oneshot
+Oracle: ..., reveal the top three cards of your library. Put all land cards revealed this way onto the battlefield and the rest into your hand.
+Flavour: I can't abide laziness. Arise, force of nature, and serve your master!
+
+Name: Your Inescapable Doom
+Type: Ongoing
+Oracle: At the beginning of your end step, put a doom counter on this scheme, then this scheme deals damage equal to the number of doom counters on it to the opponent with the highest life total among your opponents. If two or more players are tied for the highest life togal, you choose one.
+
+Name: Your Puny Minds Cannot Fathom
+Type: Oneshot
+Oracle: ..., draw four cards. You have no maximum hand size until your next turn.
+Flavour: I have seen far beyond this imperfect world, into a tomorrow that doesn't include you.
+
+Name: Your Will Is Not Your Own
+Type: Oneshot
+Oracle: ..., gain control of target creature an opponent controls until end of turn. Untap that creature. It gets +3/+3 and gains haste and trample until end of turn.
+Flavour:Fool. I'll show you how to use that thing.
+

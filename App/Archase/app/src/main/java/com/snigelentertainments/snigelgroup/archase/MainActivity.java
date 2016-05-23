@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Archase");
     }
 
+    public void doesNothing(View view){
+        Context context = this.getApplicationContext();
+        String text = "Currently does nothing";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
 
     public void onClickPlanechase(View view){
         Log.d(TAG, "launching planechase laucnher");
@@ -58,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         else {
-            String v = (String)(view == null?"null":view.getId());
+            String v = (String)(view == null?"null":""+view.getId());
             Log.w(TAG, String.format("Tried launching archenmy with the wrong view: %s", v));
         }
 

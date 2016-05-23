@@ -73,7 +73,8 @@ public class PlanechaseLaunch extends AppCompatActivity {
             }
 
         });
-        String spinnerItems[] = {"Preconstructed Deck", "Deck1", "Deck2", "Deck3"};
+        String spinnerItems[] = {"Elemental Thunder (2009)", "Metallic Dreams (2009)", "Strike Force (2009)", "Zombie Empire (2009)",
+                "Chaos Reigns (2012)", "Night of the Ninja (2012)", "Primordial Hunger (2012)", "Savage Auras (2012)", "[Exit]"};
         //String spinnerItems[] = new String[3];
         //spinnerItems[0] = "Deck1";
         //spinnerItems[1] = "Deck2";
@@ -102,7 +103,7 @@ public class PlanechaseLaunch extends AppCompatActivity {
         CStack<PileItem> myPile = null;
         //TODO change 5 to 40
 
-        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2, getAssets());
+        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2, false, getAssets());
 
         Log.v(TAG, "creating pileactivity intent");
 
@@ -132,7 +133,7 @@ public class PlanechaseLaunch extends AppCompatActivity {
         CStack<PileItem> myPile = null;
         //TODO change 5 to 40
 
-        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2, getAssets());
+        myPile = HeapFactory.getFactory().getRandomCardPile("planes", 40,2,false, getAssets());
 
         Log.v(TAG, "creating pileactivity intent");
 

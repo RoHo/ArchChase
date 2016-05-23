@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.io.Serializable;
 
 import misc.stack.CStack;
+import misc.stack.HeapFactory;
 import misc.stack.PileItem;
 
 public class PileActivity extends Activity {
@@ -35,7 +36,7 @@ public class PileActivity extends Activity {
         setContentView(R.layout.activity_pile);
 
         bOracle = (Button) findViewById(R.id.b_oracle);
-        bNext = (Button) findViewById(R.id.b_next);
+        bNext = (Button) findViewById(R.id.b_prev);
         bShuffle = (Button) findViewById(R.id.b_shuffle);
         bScry = (Button) findViewById(R.id.b_scry);
         bToggle = (Button) findViewById(R.id.b_hide);
@@ -45,13 +46,25 @@ public class PileActivity extends Activity {
         Log.v(TAG, "trying to access bundle");
         Bundle b = this.getIntent().getExtras();
         Serializable s = b.getSerializable("cstack");
-        this.myPile = (CStack<PileItem>) s;
+
         String type  = b.getString("type");
+        Boolean allowReps = b.getBoolean("allowReps");
+        Boolean allowPromos = b.getBoolean("allowPromos");
+        Boolean showScans = b.getBoolean("showScans");
+        Boolean newInstance = b.getBoolean("new");
 
         Log.v(TAG, this.myPile==null?"pile is null":s.toString());
+        Log.v(TAG, "first call of this: " + (newInstance?"new insance":"reloading old instance"));
+        Log.v(TAG, "mypile is null" + this.myPile==null?"yes":"no");
+
+        //moved down to avoid overriding
+        //this.myPile = (CStack<PileItem>) s;
+        this.myPile = HeapFactory.getFactory().getPile("schemes");
+        Log.v(TAG, String.format("getting pile from extras: %s", System.identityHashCode(myPile)));
 
         Context context = this.getApplicationContext();
-        String text = String.format("Heap\nType: \t%s\nPile size: \t%d", type, this.myPile.get_size());
+        String text = String.format("Archenemy\nType: \t%s\nPile size: \t%d\nRepetitions: %s\nPromos: %s\nScans: %s", type, this.myPile.get_size(),
+                allowReps?"allowed":"not allowed", allowPromos?"allowed":"not allowed", showScans?"shown":"text only");
         Log.v(TAG, text);
         int duration = Toast.LENGTH_SHORT;
 
@@ -82,10 +95,56 @@ public class PileActivity extends Activity {
         tvTitle.setVisibility(View.INVISIBLE);
     }
 
+    public void onClickPrevCard(View view){
+        Log.d(TAG, "onClickPrevCard");
+
+        if (view.getId() == R.id.b_prev )
+        {
+
+            //flip the pile
+            PileItem pi = this.myPile.get_n_last(1);
+            this.myPile.removeElement(myPile.get_size());
+            this.myPile.add_value_top(pi);
+            //get path to picture
+            String firstDrawableName = (String)pi.getPicture();
+            Log.v(TAG, String.format("new pi address: %s", firstDrawableName));
+
+            AssetManager assetManager = getAssets();
+            InputStream istr = null;
+            try {
+                istr = assetManager.open(firstDrawableName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Drawable firstDrawable = Drawable.createFromStream(istr, firstDrawableName);
+
+            Log.v(TAG, String.format("pi entry: %s", pi));
+            Log.v(TAG, String.format("pi drawable: %s", firstDrawable));
+
+            // update oracle and title
+            String oracleText = this.myPile.get_first().getOracle();
+            String titleText = this.myPile.get_first().getName();
+            this.tvTitle.setText(titleText);
+            this.tvOracle.setText(oracleText);
+
+            ImageView iview = (ImageView) findViewById(R.id.iv_background);
+            iview.setImageDrawable(firstDrawable);
+            iview.refreshDrawableState();
+        }
+        else {
+            String v = "" + (view == null?"null":view.getId());
+            Log.w(TAG, String.format("Tried going to the PREV card with the wrong view: %s", v));
+        }
+    }
+
     public void onClickNextCard(View view){
         Log.d(TAG, "onClickNextCard");
 
         if (view.getId() == R.id.b_next || view.getId() == R.id.iv_background){
+            if (view.getId() == R.id.iv_background){
+                return;
+            }
+
             //flip the pile
             PileItem pi = this.myPile.turn_over();
             //get path to picture

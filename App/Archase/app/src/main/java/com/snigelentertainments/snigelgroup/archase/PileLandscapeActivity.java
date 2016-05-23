@@ -34,13 +34,13 @@ public class PileLandscapeActivity extends Activity {
         Log.d(TAG, "pileactivity oncreated");
         setContentView(R.layout.activity_landscape_pile);
 
-        bOracle = (Button) findViewById(R.id.b_oracle);
-        bNext = (Button) findViewById(R.id.b_next);
-        bShuffle = (Button) findViewById(R.id.b_shuffle);
-        bScry = (Button) findViewById(R.id.b_scry);
-        bToggle = (Button) findViewById(R.id.b_hide);
-        tvTitle = (TextView) findViewById(R.id.tv_title);
-        tvOracle = (TextView) findViewById(R.id.tv_oracle);
+        bOracle = (Button) findViewById(R.id.b_ls_oracle);
+        bNext = (Button) findViewById(R.id.b_ls_prev);
+        bShuffle = (Button) findViewById(R.id.b_ls_shuffle);
+        bScry = (Button) findViewById(R.id.b_ls_scry);
+        bToggle = (Button) findViewById(R.id.b_ls_hide);
+        tvTitle = (TextView) findViewById(R.id.tv_ls_title);
+        tvOracle = (TextView) findViewById(R.id.tv_ls_oracle);
 
         Log.v(TAG, "trying to access bundle");
         Bundle b = this.getIntent().getExtras();
@@ -74,7 +74,7 @@ public class PileLandscapeActivity extends Activity {
         Log.v(TAG, String.format("FirstEntry: %s", firstEntry));
         Log.v(TAG, String.format("Firstdrawable: %s", firstDrawable));
 
-        ImageView iview = (ImageView) findViewById(R.id.iv_background);
+        ImageView iview = (ImageView) findViewById(R.id.iv_ls_background);
         iview.setImageDrawable(firstDrawable);
         iview.refreshDrawableState();
 
@@ -85,7 +85,12 @@ public class PileLandscapeActivity extends Activity {
     public void onClickNextCard(View view){
         Log.d(TAG, "onClickNextCard");
 
-        if (view.getId() == R.id.b_next || view.getId() == R.id.iv_background){
+        if (view.getId() == R.id.b_ls_next || view.getId() == R.id.iv_ls_background){
+            if (view.getId() == R.id.iv_ls_background){
+                //temporarilly disabled
+                return;
+            }
+
             //flip the pile
             PileItem pi = this.myPile.turn_over();
             //get path to picture
@@ -110,7 +115,7 @@ public class PileLandscapeActivity extends Activity {
             this.tvTitle.setText(titleText);
             this.tvOracle.setText(oracleText);
 
-            ImageView iview = (ImageView) findViewById(R.id.iv_background);
+            ImageView iview = (ImageView) findViewById(R.id.iv_ls_background);
             iview.setImageDrawable(firstDrawable);
             iview.refreshDrawableState();
         }
@@ -120,10 +125,52 @@ public class PileLandscapeActivity extends Activity {
         }
     }
 
+    public void onClickPrevCard(View view){
+        Log.d(TAG, "onClickPrevCard");
+
+        if (view.getId() == R.id.b_ls_prev )
+        {
+
+            //flip the pile
+            PileItem pi = this.myPile.get_n_last(1);
+            this.myPile.removeElement(myPile.get_size());
+            this.myPile.add_value_top(pi);
+            //get path to picture
+            String firstDrawableName = (String)pi.getPicture();
+            Log.v(TAG, String.format("new pi address: %s", firstDrawableName));
+
+            AssetManager assetManager = getAssets();
+            InputStream istr = null;
+            try {
+                istr = assetManager.open(firstDrawableName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Drawable firstDrawable = Drawable.createFromStream(istr, firstDrawableName);
+
+            Log.v(TAG, String.format("pi entry: %s", pi));
+            Log.v(TAG, String.format("pi drawable: %s", firstDrawable));
+
+            // update oracle and title
+            String oracleText = this.myPile.get_first().getOracle();
+            String titleText = this.myPile.get_first().getName();
+            this.tvTitle.setText(titleText);
+            this.tvOracle.setText(oracleText);
+
+            ImageView iview = (ImageView) findViewById(R.id.iv_ls_background);
+            iview.setImageDrawable(firstDrawable);
+            iview.refreshDrawableState();
+        }
+        else {
+            String v = "" + (view == null?"null":view.getId());
+            Log.w(TAG, String.format("Tried going to the PREV card with the wrong view: %s", v));
+        }
+    }
+
 
     public void toggleLegend(View view){
         Log.d(TAG, "Legendviewtoggled");
-        if (view.getId() == R.id.b_hide){
+        if (view.getId() == R.id.b_ls_hide){
 
             if (bOracle.getVisibility()==View.INVISIBLE || bScry.getVisibility()==View.INVISIBLE || bShuffle.getVisibility()==View.INVISIBLE){
                 Log.v(TAG, "set all to VISIBLE");
@@ -148,7 +195,7 @@ public class PileLandscapeActivity extends Activity {
 
     public void onClickOracle(View view){
         Log.d(TAG, "onClick Oracle");
-        if (view.getId() == R.id.b_oracle){
+        if (view.getId() == R.id.b_ls_oracle){
             /*Context context = this.getApplicationContext();
             String text = "Oracling not yet implemented!";
             int duration = Toast.LENGTH_SHORT;
@@ -179,7 +226,7 @@ public class PileLandscapeActivity extends Activity {
 
     public void onClickShuffle(View view){
         Log.d(TAG, "onClick shuffle");
-        if (view.getId() == R.id.b_shuffle){
+        if (view.getId() == R.id.b_ls_shuffle){
             Context context = this.getApplicationContext();
             String text = "Shuffling not yet implemented!";
             int duration = Toast.LENGTH_SHORT;
@@ -195,7 +242,7 @@ public class PileLandscapeActivity extends Activity {
 
     public void onClickScry(View view){
         Log.d(TAG, "onClick Scry");
-        if (view.getId() == R.id.b_scry){
+        if (view.getId() == R.id.b_ls_scry){
             Context context = this.getApplicationContext();
             String text = "Scrying not yet implemented!";
             int duration = Toast.LENGTH_SHORT;

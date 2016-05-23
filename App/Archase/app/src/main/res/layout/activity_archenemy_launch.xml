@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -9,24 +11,170 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.snigelentertainments.snigelgroup.archase.archenemy.ArchenemyLaunch">
 
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+        android:id="@+id/lo_ar_pre"
+        android:layout_weight="0.40">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume\nPrevious\nGame"
+            android:id="@+id/b_ar_resume"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="loadLastRun"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22dp"
+            android:padding="16dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_ar_quickAccess"
+            android:spinnerMode="dialog"
+            android:layout_alignBottom="@+id/b_ar_resume"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/b_ar_resume"
+            android:layout_toEndOf="@+id/b_ar_resume" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Predefined Decklist"
+            android:id="@+id/tv_ar_predefined"
+            android:layout_above="@+id/sp_ar_quickAccess"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/sp_ar_quickAccess"
+            android:layout_alignStart="@+id/sp_ar_quickAccess"
+            android:password="false"
+            android:phoneNumber="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/border"
+        android:id="@+id/lo_arch_quick">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick start\n(random)"
+            android:id="@+id/b_ar_random"
+            android:textSize="20dp"
+            android:onClick="startRandom40"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow multiple scheme instances"
+            android:id="@+id/cb_ar_allowrep"
+            android:layout_below="@+id/b_ar_random"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="true"
+            android:textSize="16dp"
+            android:onClick="doesNothing" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_random_number"
+            android:layout_alignBottom="@+id/b_ar_random"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/b_ar_random"
+            android:layout_toEndOf="@+id/b_ar_random" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow promo schemes"
+            android:id="@+id/cb_ar_allowpromos"
+            android:layout_below="@+id/b_ar_allowrephelp"
+            android:layout_alignLeft="@+id/cb_ar_allowrep"
+            android:layout_alignStart="@+id/cb_ar_allowrep"
+            android:checked="true"
+            android:textSize="16dp"
+            android:onClick="doesNothing"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionmark"
+            android:id="@+id/b_ar_allowrephelp"
+            android:layout_alignBottom="@+id/cb_ar_allowrep"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="doesNothing"
+            android:layout_marginRight="5dp"/>
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:onClick="doesNothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionmark"
+            android:id="@+id/b_ar_stop_help"
+            android:layout_below="@+id/b_ar_allowrephelp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"/>
+
+    </RelativeLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Scans"
+        android:checked="true"
+        android:id="@+id/cb_ar_showGraph"
+        android:layout_gravity="center_horizontal" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quick start\n(random)"
-        android:id="@+id/b_ar_random"
-        android:layout_marginTop="59dp"
-        android:textSize="20dp"
-        android:layout_alignParentTop="true"
+        android:drawableLeft="@android:drawable/ic_menu_help"
+        android:text="Rules"
+        android:id="@+id/b_ar_rules"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="startRandom40" />
+        android:onClick="doesNothing"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sp_ar_quickAccess"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:spinnerMode="dropdown" />
-
-</RelativeLayout>
+</LinearLayout>

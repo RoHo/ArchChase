@@ -1,0 +1,143 @@
+Akoum
+Oracle: Players may cast enchantment cards as though they had flash.
+Chaos: Whenever you roll <Chaos>, destroy target creature that isn't enchanted
+
+
+Aretopolis
+Oracle: When you planeswalk to Aretopolis or at the beginning of your upkeep, put a scroll counter on Aretopolis, then you gain life equal to the number of scroll counters on it.\n When Aretopolis has ten or more scroll counters on it, planeswalk.
+Chaos: Whenevre you roll <Chaos>, put a scroll counter on Aretopolis, then draw cards equal to the number of scroll counters on it.
+
+
+Astral_Arena
+Oracle: No more than one creature can ttack each combat.\n No more than one creatre can block each combat.
+Chaos: Whenever you roll <Chaos>, Astral Arena deals 2 damage to each creature.
+
+Bloodhill_Bastion
+Oracle: Whenever a creature enters the battlefield, it gains double strike and haste until end of turn.
+Chaos: Whenever you roll <Chaos>, exile target nontoken creature you control, then return it to the battlefield under your control.
+
+Edge_of_Malacol
+Oracle: If a creature you control would untap during your untap step, put two +1/+1 counters on it instead.
+Chaos: Whenever you roll <Chaos>, untap each creature you control.
+
+Furnace_Layer
+Oracle: When you planeswalk to Furnace layer of at the beginnig of your upkeep, select target player at random. That player discards a card. If that player discards a land card this way, s/he loses 3 life.
+Chaos: Whenever you roll <Chaos>, you may destroy target nonland permanent
+
+Gavony
+Oracle: All creatures have vigilance.
+Chaos: Whenever you roll <Chaos>, creatures you control are indestructible this turn.
+
+Glen_Elendra
+Oracle: At end of combat, you may exchange control of target creature you control that dealt combat damage to a player this combat and target creature that player controls
+Chaos: ... gain control of target creature you own.
+
+Grand_Ossuary
+Oracle: Whenever a creature dies, its controller distributes a number of +1/+1 coutners equal to its power among any number of target creatues s/he controls. 
+Chaos: ..., each player exiles all creatures s/he controls and pus X 1/1 green Saprling creature tokens onto the battlefield, where X is the total power of all creatures s/he exiled this way. Then planeswalk away.
+
+
+Grove_of_the_Dreampods
+Oracle: When you planeswalk to Grove of the Dreampods or at the beginning of your upkeep, reavel cards from the top of your libarary unti you reveal a creature card. Put that card onto the battlefield and the rest on the bottom of your library in a random order.
+Chaos: ..., return target creature card from your graveyard to the battlefield.
+
+Hedron_Fields_of_Agadeem
+Oracle: Creatures with power 7 or greater can't attack or block.
+Reminder: Whenever it attacks, defending player sacrifices a permanent.
+Chaos: ..., put a 7/7 colorless Eldrazi creature token with annihilator 1 onto the battlefield.
+
+Jund
+Oracle: Whenever a player casts a black, red, or green creature spell, it gains devour 5.
+Reminder: As the creature enters the battlefield, its controller may sacrifice any number of creatures. The creature enters the battlefield with five times that many +1/+1 counters on it.
+Chaos: ..., put two 1/1 red Goblin creature tokens onto the battlefield.
+
+Kessig
+Oracle: Prevent all combat damage, that would be dealt by non-Werewolf creatures.
+Chaos: ..., each creature you control gets +2/+2, gains trample, and becomes a Werewolf in addition to its other types until end of turn.
+
+
+Kharasha_Foothills
+Oracle: Whenever a creature you control attacks a player, for each other opponent, you may put a token that's a copy of that creature onto the battlefield tapped and attacking that opponent. Exile these tokens at the beginning of the next end step.
+Chaos: ..., you may sacrifice any number of creatures. If you do, Kharasha Foothills deals that much damage to target creature.
+
+Kilnspire_District
+Oracle: When you planeswalk to Kilnspire District or at the beginning of your precombat main phase, put a charge counter o Kilnspire District, then add {R} to your mana pool for each charge counter on it.
+Chaos: ..., you may pay {x}. If you do, Kilnspire District deals X damage to target creature of player.
+
+Lair_of_the_Ashen_Idol
+Oracle: At the beginning of your upkeep, sacrifice a creatre. If you can't, planeswalk.
+Chaos: ..., any number of target players each put a 2/2 black Zombie creature token onto the battlefield.
+
+
+Mount_Keralia
+Oracle: At the beginning of your end step, put a pressure counter on Mount Keralia.\n When you planeswalk away from Mount Keralia, it deals damage equal to the number of pressure counters on it to each creature and planeswalker.
+Chaos: ..., prevent all damage that planes named Mount Keralia would deal this game to permanents you control.
+
+Nephalia
+Oracle: At the beginning of your end step, put the top seven cards of your library into your graveyard. Then return a card at random from your graveyard to your hand.
+Chaos: ..., return target card from your graveyard to your hand.
+
+Norns_Dominion
+Oracle: When you planeswalk away from Norn's Dominion, destroy each nonland permanent without a face counter on it, then remove all fate counters from all permanents.
+Chaos: ..., you may put a fate counter on target permanent.
+
+Onakke_Catacomb
+Oracle: All creatures are black and have deathtouch.
+Chaos: ..., creatures you control get +1/+0 and gain first strike until end of turn.
+
+Orochi_Colony
+Oracle: Whenever a creature you control deals combat damage to a player, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+Chaos: ..., target creature is unblockable this turn.
+
+Orzhova
+Oracle: When you planeswalk away from Orzhova, each player returns all creature cards from his or her graveyard to the battlefield.
+Chaos: ..., for each opponent, exile up to one target creature card from that player's graveyard.
+
+
+Prahv
+Oracle: If you cast a spel this turn, you can't attack with creatures\n If you attacked with creatures this turn, you can't cast spells.
+Chaos: ..., you gain life equal to the number of cards in your hand.
+
+
+Quicksilver_Sea
+Oracle: When you planeswalk to Quicksilver Sea or at the beginning of your upkeep, scry 4.
+Reminder: To scry 4, look at the top four cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.
+Chaos: ..., reveal the top card of your library. You may play it without paying its mana cost.
+
+Selesnya_Loft_Gardens
+Oracle: If an effect would put one or more tokens onto the battlefield, it puts twice that many of those tokens onto the battlefield instead.\n If an effect would place one or more counters on a permanent, it places twice that many of those counters on that permanent instead.
+Chaos: ..., until end of turn, whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.
+
+Stensia
+Oracle: Whenever a creature deals damage to one of more players for the first time in a turn, put a +1/+1 counter on it.
+Chaos: ..., each creature you control gains "{T}: This creature deals 1 damage to target player" until end of turn.
+
+Takenuma
+Oracle: Whenever a creature leaves the battlefield, its controller draws a card.
+Chaos: ..., return target creature you control to its owner's hand.
+
+Talon_Gates
+Oracle: Any time you could cast a sorcery, you may exile a nonland card from your hand with X time counters on it, where X is its converted mana cost. If the exiled card doesn't have suspend, it gains suspend.
+Reminder: At the beginning of its owner's upkeep, s/he removes a time counter. When the last one is removed, the player may cast it without paying its mana cost. If it's a creature, it gains haste.
+Chaos: ..., remove two time counters from each suspended card you own.
+
+Trail_of_the_Mage-Rings
+Oracle: Instants and sorcery spells have rebound.
+Reminder: The spell's controller exiles the spell as it resolves if s/he cast it from his/her hand. At the beginnnig of that player#s next upkeep, s/he may cast that card from exile without paying its mana cost.
+Chaos: ..., you may search your library for an instant or sorcery card, reveal it, put it into your hand, then shuffle your library.
+
+Truga_Jungle
+Oracle: All lands have "{T}: Add one mana of any color to your mana pool."
+Chaos: ..., reveal the top three cards of your library. Put all land cards revealed this way into your hand and the rest on the bottom of your library in any order.
+
+Windriddle_Palaces
+Oracle: Players play with the top card of their libraries revealed.\n You may play the top card of any player's library.
+Chaos: ..., each player puts the top card of his of her library into his or her graveyard.
+
+The_Zephyr_Maze
+Oracle: Creatures with flying get +2/+0.\n Creatures without flying get -2/-0.
+Chaos: ..., target creature gains flying until end of turn.
+
+Stairs to Infinity
+Oracle: Players have no maximum hand size.\n Whenever you roll the planar die, draw a card.
+chaos: ..., reveal the top card of your planar deck. You may put it on the bottom of your planar deck.

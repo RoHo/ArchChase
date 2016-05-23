@@ -27,8 +27,10 @@ public class HeapFactory implements Serializable{
     private static HeapFactory factory;
 
     private static HashMap<String, PileItem> allPlanes = null;
+    private static CStack<PileItem> planeStack = null;
 
     private static HashMap<String, PileItem> allSchemes = null;
+    private static CStack<PileItem> schemeStack = null;
 
     private  HeapFactory(){
         if (allPlanes == null){
@@ -112,7 +114,7 @@ public class HeapFactory implements Serializable{
         return null;
     }
 
-    public CStack<PileItem> getRandomCardPile(String type, int number, int maxReps, AssetManager assets){
+    public CStack<PileItem> getRandomCardPile(String type, int number, int maxReps, boolean allowPromos, AssetManager assets){
         CStack<PileItem> tempStack = new CStack<PileItem>();
 
         if (type.equals("planes")){
@@ -126,6 +128,7 @@ public class HeapFactory implements Serializable{
 
             //create pile
             CStack<PileItem> pile =  createPlanesPile(pilesize, maxReps);
+            HeapFactory.planeStack = pile;
             return pile;
         }
         else if (type.equals("schemes")) {
@@ -137,13 +140,14 @@ public class HeapFactory implements Serializable{
 
             //create pile
             CStack<PileItem> pile =  createSchemesPile(pilesize, maxReps);
+            HeapFactory.schemeStack = pile;
             return pile;
         }
         else{
             Log.e(TAG, String.format("Unknown item pile requested: %s", type));
         }
 
-
+        Log.v(TAG, "freshly created stack for extras: " + System.identityHashCode(tempStack));
         return tempStack;
     }
 
@@ -233,7 +237,8 @@ public class HeapFactory implements Serializable{
                     if (address == null){
                         Log.v(TAG, "drawable could not be created");
                     }
-                    PileItem tempPlane = new PlanesItem(s,address,"N/A");
+                    String oracle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique lacus non odio mollis imperdiet. Vestibulum ante ipsum primis in. ";
+                    PileItem tempPlane = new PlanesItem(s,address,oracle);
                     allPlanes.put(s, tempPlane);
                     }
                 }
@@ -269,7 +274,9 @@ public class HeapFactory implements Serializable{
                     if (address == null){
                         Log.v(TAG, "drawable could not be created");
                     }
-                    PileItem tempScheme = new PlanesItem(s,address,"N/A");
+                    String oracle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique lacus non odio mollis imperdiet. Vestibulum ante ipsum primis in. ";
+                    oracle = "When you set this scheme in motion"+"each opponent reveals cards from the top of his or her library until he or she reveals a creature card. Choose one of these revealed cards and put it into the battlefield under your control. Put all other cards revealed this way into their owners' graveyards.";
+                    PileItem tempScheme = new PlanesItem(s,address,oracle);
                     allSchemes.put(s, tempScheme);
                 }
             }
@@ -280,6 +287,20 @@ public class HeapFactory implements Serializable{
         Log.v(TAG, String.format("allSchemes: %s", allSchemes));
         HeapFactory.allSchemes = allSchemes;
 
+    }
+
+    public static CStack<PileItem> getPile(String type){
+        Log.d(TAG, String.format("get pile called with: %s", type));
+        if (type.equals("planes")){
+            Log.v(TAG, "identified as planes");
+            return HeapFactory.planeStack;
+        }
+        else if (type.equals("schemes")){
+            Log.v(TAG, "identify as schemes");
+            return HeapFactory.schemeStack;
+        }
+        Log.w(TAG, String.format("unknown pile called: %s", type));
+        return null;
     }
 
     class PlanesItem implements PileItem{
