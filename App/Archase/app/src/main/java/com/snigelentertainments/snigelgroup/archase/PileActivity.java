@@ -53,13 +53,13 @@ public class PileActivity extends Activity {
         Boolean showScans = b.getBoolean("showScans");
         Boolean newInstance = b.getBoolean("new");
 
-        Log.v(TAG, this.myPile==null?"pile is null":s.toString());
+        Log.v(TAG, this.myPile==null?"pile is null":s!=null?s.toString():"cstack not found");
         Log.v(TAG, "first call of this: " + (newInstance?"new insance":"reloading old instance"));
-        Log.v(TAG, "mypile is null" + this.myPile==null?"yes":"no");
+        Log.v(TAG, "mypile is null" + (this.myPile==null?"yes":"no"));
 
         //moved down to avoid overriding
         //this.myPile = (CStack<PileItem>) s;
-        this.myPile = HeapFactory.getFactory().getPile("schemes");
+        this.myPile = HeapFactory.getPile("schemes");
         Log.v(TAG, String.format("getting pile from extras: %s", System.identityHashCode(myPile)));
 
         Context context = this.getApplicationContext();

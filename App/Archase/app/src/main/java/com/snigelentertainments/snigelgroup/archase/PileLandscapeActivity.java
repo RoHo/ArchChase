@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.io.Serializable;
 
 import misc.stack.CStack;
+import misc.stack.HeapFactory;
 import misc.stack.PileItem;
 
 public class PileLandscapeActivity extends Activity {
@@ -45,7 +46,7 @@ public class PileLandscapeActivity extends Activity {
         Log.v(TAG, "trying to access bundle");
         Bundle b = this.getIntent().getExtras();
         Serializable s = b.getSerializable("cstack");
-        this.myPile = (CStack<PileItem>) s;
+        this.myPile = HeapFactory.getPile("planes");
         String type  = b.getString("type");
 
         Log.v(TAG, this.myPile==null?"pile is null":s.toString());

@@ -2,6 +2,7 @@ package com.snigelentertainments.snigelgroup.archase.archenemy;
 
 import android.app.ActionBar;
 import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -17,7 +19,7 @@ import android.widget.Toast;
 import com.snigelentertainments.snigelgroup.archase.MainActivity;
 import com.snigelentertainments.snigelgroup.archase.PileActivity;
 import com.snigelentertainments.snigelgroup.archase.R;
-import com.snigelentertainments.snigelgroup.archase.RulesDialogFragment;
+import com.snigelentertainments.snigelgroup.archase.dialogs.RulesDialogFragmentArch;
 
 import misc.stack.CStack;
 import misc.stack.HeapFactory;
@@ -46,6 +48,8 @@ public class ArchenemyLaunch extends AppCompatActivity {
         setTitle("Archenemy");
 
         lastRun = null;
+
+        ((Button) findViewById(R.id.b_ar_resume)).setEnabled(false);
 
         allowRepetitions = (CheckBox) findViewById(R.id.cb_ar_allowrep);
         allowPromos = (CheckBox) findViewById(R.id.cb_ar_allowpromos);
@@ -94,7 +98,7 @@ public class ArchenemyLaunch extends AppCompatActivity {
 
 
         Log.v(TAG, "setting onItemClickListeener for random size spinner");
-        this.selectRandomSize = (Spinner) findViewById(R.id.spinner_random_number);
+        this.selectRandomSize = (Spinner) findViewById(R.id.spinner_random_number_ar);
         this.selectRandomSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -149,16 +153,16 @@ public class ArchenemyLaunch extends AppCompatActivity {
     public void showRules(View view){
         Log.d(TAG, "showRules started");
 
-        String text = "This does currently nothing!";
-        int duration = Toast.LENGTH_SHORT;
-        Context context = ArchenemyLaunch.this.getApplicationContext();
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+//        String text = "This does currently nothing!";
+//        int duration = Toast.LENGTH_SHORT;
+//        Context context = ArchenemyLaunch.this.getApplicationContext();
+//        Toast toast = Toast.makeText(context, text, duration);
+//        toast.show();
 
-        DialogFragment rulesFragment = new RulesDialogFragment();
-        //rulesFragment.show(getSupportFragmentManager(), "NoticeDialogFragment");
+        DialogFragment rulesFragment = new RulesDialogFragmentArch();
+        FragmentManager fm = getFragmentManager();
 
-
+        rulesFragment.show(fm, "NoticeDialogFragment");
     }
 
 
@@ -210,7 +214,7 @@ public class ArchenemyLaunch extends AppCompatActivity {
         Log.v(TAG, String.format("myPile: %s", myPile));
         assert myPile != null;
         for (PileItem pi: myPile.get_items()){
-            Log.v(TAG, String.format("pi: %s", pi));
+            //Log.v(TAG, String.format("pi: %s", pi));
         }
 
         Log.v(TAG, "creating pileactivity intent");
@@ -226,6 +230,7 @@ public class ArchenemyLaunch extends AppCompatActivity {
         i.putExtra("allowPromos", true);
         i.putExtra("new", true);
         this.lastRun = i;
+        ((Button) findViewById(R.id.b_ar_resume)).setEnabled(true);
         startActivity(i);
 
 
