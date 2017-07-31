@@ -17,5 +17,6 @@ public class Planechase extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(MainActivity.TAG, String.format("Planechase started with %s", savedInstanceState));
+        getActionBar().setTitle("Planechase");
     }
 }
